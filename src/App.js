@@ -1,13 +1,22 @@
-import './App.css';
+import "./App.css";
 
-const App = function() {
-  const name = "John";
+const App = function () {
+  const name = "Arpit Jana";
 
-    return (
-        <div className="App">
-            <h1>Hello {name} !</h1>
-        </div>
-    );
-}
+  return (
+    <div className="App">
+      {name ? (
+        <>
+          <h1>Hello {name}</h1>
+        </>
+      ) : (
+        <>
+          <h1>No User Found !</h1>
+          <p>Please Login</p>
+        </>
+      )}
+    </div>
+  );
+};
 
 export default App;
