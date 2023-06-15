@@ -1,20 +1,12 @@
-import "./App.css";
+import './App.css';
 
 const App = function () {
-  const name = "Arpit Jana";
-
+  cosnt 
   return (
     <div className="App">
-      {name ? (
-        <>
-          <h1>Hello {name}</h1>
-        </>
-      ) : (
-        <>
-          <h1>No User Found !</h1>
-          <p>Please Signup</p>
-        </>
-      )}
+      <button>-</button>
+      <h1>0</h1>
+      <button>+</button>
     </div>
   );
 };
