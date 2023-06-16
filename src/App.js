@@ -1,12 +1,17 @@
-import './App.css';
+import React from "react";
 
-const App = function () {
-  cosnt 
+function Person() {
+  return (
+    <>
+      <h1>Arpit Jana</h1>
+    </>
+  );
+}
+const App = () => {
   return (
     <div className="App">
-      <button>-</button>
-      <h1>0</h1>
-      <button>+</button>
+      <Person />
+      <Person />
     </div>
   );
 };
