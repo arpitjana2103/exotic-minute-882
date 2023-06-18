@@ -1,19 +1,19 @@
-import React from "react";
+import { useEffect } from "react";
 
-function Person() {
-  return (
-    <>
-      <h1>Arpit Jana</h1>
-    </>
-  );
-}
+const API_URL = "http://www.omdbapi.com?apikey=276bfff3";
+
 const App = () => {
-  return (
-    <div className="App">
-      <Person />
-      <Person />
-    </div>
-  );
+  const searchMovies = async function (title) {
+    const response = await fetch(`${API_URL}&s={title}`);
+    const data = await response.json();
+    console.log(data.Search);
+  };
+
+  useEffect(() => {
+    searchMovies("spiderman");
+  }, []);
+
+  return <h1>App</h1>;
 };
 
 export default App;
